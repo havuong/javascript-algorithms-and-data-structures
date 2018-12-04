@@ -24,3 +24,12 @@ var c = 4.6;
 a *= 5; // a = 25
 b *= 3; // b = 36
 c *= 10; // c = 46
+
+// Compound Assignment With Augmented Division
+var a = 48;
+var b = 108;
+var c = 33;
+
+a /= 12; // a = 4
+b /= 4; // b = 27
+c /= 11; // c = 3
