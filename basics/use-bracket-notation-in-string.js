@@ -9,3 +9,8 @@ var firstLetterOfLastName = "";
 var lastName = "Lovelace";
 
 firstLetterOfLastName = lastName[0];
+
+// Understand String Immutability
+var myStr = "Jello World";
+
+myStr = "Hello World"; // myStr[0] = "H" // fix me
