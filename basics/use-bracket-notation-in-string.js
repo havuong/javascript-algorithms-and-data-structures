@@ -23,4 +23,9 @@ var thirdLetterOfLastName = lastName[2];
 // Use Bracket Notation to Find the Last Character in a String
 var lastName = "Lovelace";
 
-var lastLetterOfLastName = lastName[lastName.length - 1];
+var lastLetterOfLastName = lastName[lastName.length - 1]; // e
+
+// Use Bracket Notation to Find the Nth-to-Last Character in a String
+var lastName = "Lovelace";
+
+var secondToLastLetterOfLastName = lastName[lastName.length - 2]; // c
