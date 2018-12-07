@@ -19,3 +19,8 @@ myStr = "Hello World"; // myStr[0] = "H" // fix me
 var lastName = "Lovelace";
 
 var thirdLetterOfLastName = lastName[2];
+
+// Use Bracket Notation to Find the Last Character in a String
+var lastName = "Lovelace";
+
+var lastLetterOfLastName = lastName[lastName.length - 1];
