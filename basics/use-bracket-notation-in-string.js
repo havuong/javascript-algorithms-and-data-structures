@@ -14,3 +14,8 @@ firstLetterOfLastName = lastName[0];
 var myStr = "Jello World";
 
 myStr = "Hello World"; // myStr[0] = "H" // fix me
+
+// Use Bracket Notation to Find the Nth Character in a String
+var lastName = "Lovelace";
+
+var thirdLetterOfLastName = lastName[2];
