@@ -3,3 +3,8 @@ var myArray = ["Ha",10];
 
 // Nest one Array within Another Array
 var myArray = [["the universe", 42], ["everything", 101010]];
+
+// Access Array Data with Indexes
+var myArray = [50,60,70];
+
+var myData = myArray[0]; // equals 50
