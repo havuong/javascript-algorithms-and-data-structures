@@ -27,3 +27,6 @@ ourArray.unshift("Happy"); // ourArray now equals ["Happy", "J", "cat"]
 var myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 myArray.unshift(["Paul", 35]);
+
+// Shopping List
+var myList = [["Chocolate Bar", 15],["Milk", 5],["Tea", 2],["Snack", 1],["Tissue", 2]];
