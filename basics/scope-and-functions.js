@@ -25,3 +25,13 @@ function myLocalScope() {
 }
 myLocalScope(); // Run and check the console // myVar is not defined outside of myLocalScope
 console.log(myVar); // Now remove the console log line to pass the test
+
+// Global vs. Local Scope in Functions
+var outerWear = "T-Shirt";
+
+function myOutfit() {
+  var outerWear = "sweater";
+  return outerWear;
+}
+
+myOutfit();
