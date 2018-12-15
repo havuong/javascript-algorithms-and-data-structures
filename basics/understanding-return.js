@@ -40,3 +40,16 @@ function processArg(num) {
 }
 
 processed = processArg(7);
+
+// Stand in Line
+function nextInLine(arr, item) {
+    arr.push(item);
+    var removed = arr.shift();
+    return removed;
+}
+
+var testArr = [1, 2, 3, 4, 5];
+
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6)); // Modify this line to test
+console.log("After: " + JSON.stringify(testArr));
