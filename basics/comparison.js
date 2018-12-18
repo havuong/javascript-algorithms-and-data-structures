@@ -37,3 +37,13 @@ function testNotEqual(val) {
 }
 
 testNotEqual(10);
+
+// Comparison with the Strict Inequality Operator
+function testStrictNotEqual(val) {
+    if (val !== 17) {
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+testStrictNotEqual(10);
