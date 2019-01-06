@@ -17,3 +17,25 @@ function catTalk() {
 
 }
 catTalk();
+
+// Compare Scopes of the var and let Keywords
+var printNumTwo;
+for (var i = 0; i < 3; i++) {
+    if (i === 2) {
+        printNumTwo = function () {
+            return i;
+        };
+    }
+}
+console.log(printNumTwo()); // returns 3
+
+let printNumTwo2;
+for (let j = 0; j < 3; j++) {
+    if (j === 2) {
+        printNumTwo2 = function () {
+            return j;
+        };
+    }
+}
+console.log(printNumTwo2()); // returns 2
+console.log(j); // returns "j is not defined"
