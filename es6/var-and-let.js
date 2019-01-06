@@ -39,3 +39,14 @@ for (let j = 0; j < 3; j++) {
 }
 console.log(printNumTwo2()); // returns 2
 console.log(j); // returns "j is not defined"
+
+function checkScope() {
+    "use strict";
+    let i = "function scope";
+    if (true) {
+        let i = "block scope";
+        console.log("Block scope i is: ", i);
+    }
+    console.log("Function scope i is: ", i);
+    return i;
+}
