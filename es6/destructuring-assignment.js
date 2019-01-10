@@ -35,3 +35,11 @@ function getMaxOfTmrw(forecast) {
 }
 
 console.log(getMaxOfTmrw(LOCAL_FORECAST)); // should be 84.6
+
+// Use Destructuring Assignment to Assign Variables from Arrays
+let a = 8, b = 6;
+(() => {
+    [a, b] = [b, a];
+})();
+console.log(a); // should be 6
+console.log(b); // should be 8
