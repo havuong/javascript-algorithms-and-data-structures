@@ -12,3 +12,12 @@ capitalizeString("hello!");
 
 // Use * to Import Everything from a File
 import * as capitalize_strings from "capitalize_strings";
+
+// Import a Default Export
+/*
+The syntax differs in one key place - the imported value, add, is not surrounded by curly braces, {}.
+Unlike exported values, the primary method of importing a default export is
+to simply write the value's name after import.
+*/
+import subtract from "math_functions";
+subtract(7, 4);
