@@ -8,3 +8,14 @@ Like import, export is a non-browser feature.
 
 export { capitalizeString } //How to export functions.
 export const foo = "bar"; //How to export variables.
+
+// Create an Export Fallback with export default
+/*
+Since export default is used to declare a fallback value for a module or file,
+you can only have one value be a default export in each module or file.
+Additionally, you cannot use export default with var, let, or const
+
+Usually you will use this syntax if only one value is being exported from a file.
+It is also used to create a fallback value for a file or module.
+*/
+export default function subtract(x,y) {return x - y;}
