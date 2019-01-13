@@ -9,3 +9,6 @@ to load into a given file, saving time and memory.
 */
 import { capitalizeString } from "string_functions"
 capitalizeString("hello!");
+
+// Use * to Import Everything from a File
+import * as capitalize_strings from "capitalize_strings";
