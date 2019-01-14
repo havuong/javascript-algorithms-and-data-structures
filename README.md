@@ -1,6 +1,6 @@
-# Javascript Algorithms And Data Structures Certification
+# Javascript Algorithms And Data Structures
 
-The complete coding lesson is available over here https://learn.freecodecamp.org/
+The coding lesson is available over here https://learn.freecodecamp.org/
 
 - Basic JavaScript
 - ES6
