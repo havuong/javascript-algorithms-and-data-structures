@@ -31,3 +31,19 @@ let result = twinkleStar.match(starRegex);
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/;
 let result = unRegex.test(exampleStr);
+
+// Match Single Character with Multiple Possibilities
+// You can search for a literal pattern with some flexibility with character classes. Character classes allow you to define a group of characters you wish to match by placing them inside square ([ and ]) brackets.
+let bigStr = "big";
+let bagStr = "bag";
+let bugStr = "bug";
+let bogStr = "bog";
+let bgRegex = /b[aiu]g/;
+bigStr.match(bgRegex); // Returns ["big"]
+bagStr.match(bgRegex); // Returns ["bag"]
+bugStr.match(bgRegex); // Returns ["bug"]
+bogStr.match(bgRegex); // Returns null
+
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; // find all 25 vowels, match both upper- and lowercase vowels
+let result = quoteSample.match(vowelRegex);
