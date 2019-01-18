@@ -47,3 +47,10 @@ bogStr.match(bgRegex); // Returns null
 let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
 let vowelRegex = /[aeiou]/ig; // find all 25 vowels, match both upper- and lowercase vowels
 let result = quoteSample.match(vowelRegex);
+
+// Match Letters of the Alphabet
+// match a large range of characters (for example, every letter in the alphabet).
+// you can define a range of characters to match using a hyphencharacter: -.
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig;
+let result = quoteSample.match(alphabetRegex);
