@@ -25,3 +25,9 @@ let result = extractStr.match(codingRegex); // Returns ["/coding/; "]
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /Twinkle/ig;
 let result = twinkleStar.match(starRegex);
+
+// Match Anything with Wildcard Period
+// The wildcard character "." will match any one character. The wildcard is also called "dot" and "period"
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/;
+let result = unRegex.test(exampleStr);
