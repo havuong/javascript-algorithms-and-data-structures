@@ -77,3 +77,12 @@ let result = quoteSample.match(myRegex);
 let difficultSpelling = "Mississippi";
 let myRegex = /s+/g;
 let result = difficultSpelling.match(myRegex);
+
+// Match Characters that Occur Zero or More Times
+// The last challenge used the plus "+" sign to look for characters that occur one or more times.
+// There's also an option that matches characters that occur zero or more times.
+// The character to do this is the asteriskor star: *.
+
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/;
+let result = chewieQuote.match(chewieRegex);
