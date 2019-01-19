@@ -69,3 +69,11 @@ let result = quoteSample.match(myRegex);
 let quoteSample = "3 blind mice.";
 let myRegex = /[^aeiou0-9]/ig; // match 9 items.
 let result = quoteSample.match(myRegex);
+
+// Match Characters that Occur One or More Times
+// match a character (or group of characters) that appears one or more times in a row.
+// This means it occurs at least once, and may be repeated.
+// You can use the "+" character to check if that is the case.
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/g;
+let result = difficultSpelling.match(myRegex);
