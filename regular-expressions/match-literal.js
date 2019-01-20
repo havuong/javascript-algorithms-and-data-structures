@@ -82,7 +82,18 @@ let result = difficultSpelling.match(myRegex);
 // The last challenge used the plus "+" sign to look for characters that occur one or more times.
 // There's also an option that matches characters that occur zero or more times.
 // The character to do this is the asteriskor star: *.
-
 let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
 let chewieRegex = /Aa*/;
 let result = chewieQuote.match(chewieRegex);
+
+// Find Characters with Lazy Matching
+// The alternative is called a lazymatch, which finds the smallest possible part of the string
+// You can apply the regex /t[a-z]*i/to the string "titanic".
+// This regex is basically a pattern that starts with t, ends with i, and has some letters in between.
+// Regular expressions are by default greedy, so the match would return ["titani"].
+// It finds the largest sub-string possible to fit the pattern.
+// However, you can use the ?character to change it to lazymatching.
+// "titanic"matched against the adjusted regex of /t[a-z]*?i/returns ["ti"].
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<h1>?/;
+let result = text.match(myRegex);
