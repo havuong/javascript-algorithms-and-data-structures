@@ -105,3 +105,10 @@ let reCriminals = /C+/;
 
 let matchedCriminals = crowd.match(reCriminals);
 console.log(matchedCriminals);
+
+// Match Beginning String Patterns
+// the caretcharacter (^) inside a character setto create a negated character setin the form [^thingsThatWillNotBeMatched].
+// Outside of a character set, the caretis used to search for patterns at the beginning of strings.
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/;
+let result = calRegex.test(rickyAndCal);
