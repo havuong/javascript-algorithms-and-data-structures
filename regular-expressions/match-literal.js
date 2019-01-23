@@ -175,3 +175,11 @@ let result = numString.match(noNumRegex).length;
 let sample = "Whitespace is important in separating words";
 let countWhiteSpace = /\s/g;
 let result = sample.match(countWhiteSpace);
+
+// Match Non-Whitespace Characters
+// Search for non-whitespace using \S, which is an uppercase s.
+// This pattern will not match whitespace, carriage return, tab, form feed, and new line characters.
+// You can think of it being similar to the character class [^ \r\t\f\n\v].
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/g;
+let result = sample.match(countNonWhiteSpace);
