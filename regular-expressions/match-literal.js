@@ -204,3 +204,8 @@ let result = ohRegex.test(ohStr);
 let haStr = "Hazzzzah";
 let haRegex = /Haz{4,30}ah/;
 let result = haRegex.test(haStr);
+
+// Specify Exact Number of Matches
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/;
+let result = timRegex.test(timStr)
