@@ -9,3 +9,14 @@ each separated by a space.
 let repeatNum = "42 42 42";
 let reRegex = /^(\d+)\s\1\s\1$/;
 let result = reRegex.test(repeatNum);
+
+// Use Capture Groups to Search and Replace
+/* 
+You can also access capture groups in the replacement string with dollar signs ($).
+"Code Camp".replace(/(\w+)\s(\w+)/, '$2 $1');
+Returns "Camp Code"
+*/
+let huhText = "This sandwich is good.";
+let fixRegex = /good/;
+let replaceText = "okey-dokey";
+let result = huhText.replace(fixRegex, replaceText);
