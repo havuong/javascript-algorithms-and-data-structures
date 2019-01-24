@@ -20,3 +20,8 @@ let huhText = "This sandwich is good.";
 let fixRegex = /good/;
 let replaceText = "okey-dokey";
 let result = huhText.replace(fixRegex, replaceText);
+
+// Remove Whitespace from Start and End
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g;
+let result = hello.replace(wsRegex, '');
