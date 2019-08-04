@@ -9,3 +9,14 @@ function popShift(arr) {
 }
 
 console.log(popShift(['challenge', 'is', 'not', 'complete']));
+
+// Remove Items Using splice()
+// splice()allows us to do just that: remove any number of consecutive elements from anywhere in an array.
+// splice()can take up to 3 parameters, but for now, we'll focus on just the first 2
+// And remember, arrays are zero-indexed, so to indicate the first element of an array, we would use 0
+function sumOfTen(arr) {
+    arr.splice(2, 2);
+    return arr.reduce((a, b) => a + b);
+}
+
+console.log(sumOfTen([2, 5, 1, 5, 2, 1]));
