@@ -29,3 +29,29 @@ delete foods.plums;
 delete foods['strawberries'];
 
 console.log(foods);
+
+// Check if an Object has a Property
+let users = {
+    Alan: {
+        age: 27,
+        online: true
+    },
+    Jeff: {
+        age: 32,
+        online: true
+    },
+    Sarah: {
+        age: 48,
+        online: true
+    },
+    Ryan: {
+        age: 19,
+        online: true
+    }
+};
+
+function isEveryoneHere(obj) {
+    return (users.hasOwnProperty('Alan', 'Jeff', 'Sarah', 'Ryan')) ? true : false; // x in obj
+}
+
+console.log(isEveryoneHere(users));
